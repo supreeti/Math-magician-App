@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
 }
 
 .App-logo {
@@ -46,9 +49,18 @@ header h2 {
   text-align: center;
 }
 
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+}
+
 .result {
   display: grid;
   float: right;
+  grid-column: 1 / -1;
   margin-right: 4rem;
   grid-template-columns: repeat(4, 5.5rem);
   grid-template-rows: minmax(7rem, auto) repeat(5, 5rem);
@@ -56,10 +68,6 @@ header h2 {
 
 .span-2 {
   grid-column: span 2;
-}
-
-.result-container {
-  grid-column: 1 / -1;
 }
 
 .result-input {
@@ -72,7 +80,7 @@ header h2 {
   border: none;
 }
 
-.button {
+.keypad {
   width: 100%;
   height: 40px;
   background-color: #9e9999;
@@ -85,16 +93,16 @@ header h2 {
   align-items: center;
 }
 
-.button:last-child {
+.keypad:last-child {
   color: #333;
   background-color: orange;
 }
 
-.btn-Operators {
+.button .btn-Operators {
   background-color: #ffa246;
 }
 
-.btn-Operators:hover {
+.button .btn-Operators:hover {
   background-color: #fabc7f;
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import Buttons from './buttons';
+import '../App.css';
 
 const Calculator = () => (
   <main className="calculator">
