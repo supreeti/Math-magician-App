@@ -24,7 +24,7 @@ const Buttons = () => (
       <button type="button" className="button">.</button>
       <button type="button" className="button btn-Operator">=</button>
     </div>
-    </div>
-  );
+  </div>
+);
 
 export default Buttons;
