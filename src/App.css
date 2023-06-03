@@ -65,13 +65,14 @@ header h2 {
   grid-template-columns: repeat(4, 5.5rem);
   grid-template-rows: minmax(7rem, auto) repeat(5, 5rem);
 }
-  
+
 .calculate .keypad {
   display: grid;
   grid-template-columns: repeat(4, 2fr);
 }
 
-.keypad, .display {
+.keypad,
+.display {
   width: 80%;
   height: 20px;
   background-color: #9e9999;
@@ -87,8 +88,8 @@ header h2 {
   color: #333;
   background-color: orange;
   transition: 0.2s ease;
-}  
-  
+}
+
 .display {
   color: white;
   text-align: right;
@@ -100,16 +101,16 @@ header h2 {
 .keypad button {
   background-color: whitesmoke;
 }
-  
+
 .keypad button:hover {
   background-color: wheat;
 }
-  
+
 .z {
   grid-column-start: 1;
   grid-column-end: 3;
 }
-  
+
 .keypad .btn-Operator:hover {
   background-color: orangered;
 }
