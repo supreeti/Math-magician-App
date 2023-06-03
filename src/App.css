@@ -65,43 +65,51 @@ header h2 {
   grid-template-columns: repeat(4, 5.5rem);
   grid-template-rows: minmax(7rem, auto) repeat(5, 5rem);
 }
-
-.span-2 {
-  grid-column: span 2;
+  
+.calculate .keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
 }
 
-.result-input {
-  width: 100%;
-  height: 100%;
-  background-color: #858694;
-  text-align: end;
-  font-size: 4rem;
-  color: white;
-  border: none;
-}
-
-.keypad {
-  width: 100%;
-  height: 40px;
+.keypad, .display {
+  width: 80%;
+  height: 20px;
   background-color: #9e9999;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 2px;
   font-size: 16px;
   cursor: pointer;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.keypad:last-child {
+.keypad .btn-Operator {
   color: #333;
   background-color: orange;
+  transition: 0.2s ease;
+}  
+  
+.display {
+  color: white;
+  text-align: right;
+  background-color: gray;
+  border: 1px solid grey;
+  transition: 0.2s ease;
 }
 
-.button .btn-Operators {
-  background-color: #ffa246;
+.keypad button {
+  background-color: whitesmoke;
 }
-
-.button .btn-Operators:hover {
-  background-color: #fabc7f;
+  
+.keypad button:hover {
+  background-color: wheat;
+}
+  
+.z {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+  
+.keypad .btn-Operator:hover {
+  background-color: orangered;
 }
