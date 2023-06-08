@@ -4,31 +4,36 @@
   padding: 0;
 }
 
-.result {
-  width: 80%;
-  align-content: center;
+body {
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  margin-left: 50px;
-  margin-top: 100px;
 }
 
-.keypad,
+.calculate {
+  background-color: #f6f8f9;
+  width: 20rem;
+  border: 0.5px solid #f6f8f9;  
+}
+
 .display {
-  width: 99%;
-  height: 20px;
+  height: 48px;
   background-color: #9e9999;
   border: 1px solid #ccc;
-  border-radius: 2px;
   font-size: 16px;
+  padding: 4px;
   cursor: pointer;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: end;
+  color: white;
 }
 
-.calculate .keypad {
+.keypad {
   display: grid;
-  grid-template-rows: repeat(5, 3fr);
-  grid-template-columns: repeat(4, 3fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .keypad .btn-Operator {
@@ -37,15 +42,14 @@
   transition: 0.2s ease;
 }
 
-.display {
-  color: white;
-  text-align: right;
-  background-color: gray;
-  border: 1px solid grey;
-  transition: 0.2s ease;
-}
-
 .keypad button {
+  height: 48px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 0.5px solid #c6c6c6;
   background-color: whitesmoke;
 }
 
@@ -54,10 +58,16 @@
 }
 
 .z {
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column: span 2;
 }
 
 .keypad .btn-Operator:hover {
+  height: 48px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 0.5px solid #c6c6c6;
   background-color: orangered;
 }
