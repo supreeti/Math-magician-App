@@ -1,12 +1,10 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
 import Buttons from './buttons';
 import '../App.css';
 
 const Calculator = () => (
-  <main className="calculator">
-    <header>
-      <h2>Lets Calculate!</h2>
-    </header>
+  <main>
     <div className="result">
       <Buttons />
     </div>
