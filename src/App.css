@@ -1,39 +1,73 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  height: 100vh;
+  background-color: white;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.calculate {
+  background-color: #f6f8f9;
+  width: 20rem;
+  border: 0.5px solid #f6f8f9;
+}
+
+.display {
+  height: 48px;
+  background-color: #9e9999;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  padding: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: end;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.keypad .btn-Operator {
+  color: #333;
+  background-color: orange;
+  transition: 0.2s ease;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.keypad button {
+  height: 48px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 0.5px solid #c6c6c6;
+  background-color: whitesmoke;
+}
+
+.keypad button:hover {
+  background-color: wheat;
+}
+
+.z {
+  grid-column: span 2;
+}
+
+.keypad .btn-Operator:hover {
+  height: 48px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 0.5px solid #c6c6c6;
+  background-color: orangered;
 }
