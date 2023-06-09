@@ -29,17 +29,27 @@ body {
   align-items: center;
   justify-content: end;
   color: white;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.display .previous-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: right;
+}
+
+.display .current-operand {
+  color: white;
+  font-size: 2.5rem;
+  padding: 1rem;
+  text-align: right;
 }
 
 .keypad {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-}
-
-.keypad .btn-Operator {
-  color: #333;
-  background-color: orange;
-  transition: 0.2s ease;
 }
 
 .keypad button {
@@ -57,17 +67,12 @@ body {
   background-color: wheat;
 }
 
-.z {
-  grid-column: span 2;
+.keypad > button:nth-child(4n),
+.keypad > button:nth-child(19) {
+  background-color: orange;
+  transition: 0.2s ease;
 }
 
-.keypad .btn-Operator:hover {
-  height: 48px;
-  padding: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border: 0.5px solid #c6c6c6;
-  background-color: orangered;
+.z {
+  grid-column: span 2;
 }
