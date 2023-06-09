@@ -19,13 +19,15 @@ export default function Calculator() {
   const { total, next, operation } = state;
 
   return (
-    <div className="result">
-      <div className="display">
-        <div className="previous-operand">{next || operation}</div>
-        <div className="current-operand">{total || next || '0'}</div>
-      </div>
-      <div className="keypad">
-        <Buttons handleButtonClick={handleClick} />
+    <div className="calculate">
+      <div className="result">
+        <div className="display">
+          <div className="previous-operand">{next || operation}</div>
+          <div className="current-operand">{total || next || '0'}</div>
+        </div>
+        <div className="keypad">
+          <Buttons handleButtonClick={handleClick} />
+        </div>
       </div>
     </div>
   );

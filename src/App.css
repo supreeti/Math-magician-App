@@ -52,8 +52,8 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.keypad .btn-Operator {
-  color: #333;
+.keypad > button:nth-child(4n),
+.keypad> button:nth-child(19) {
   background-color: orange;
   transition: 0.2s ease;
 }
@@ -75,15 +75,4 @@ body {
 
 .z {
   grid-column: span 2;
-}
-
-.keypad .btn-Operator:hover {
-  height: 48px;
-  padding: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border: 0.5px solid #c6c6c6;
-  background-color: orangered;
 }
