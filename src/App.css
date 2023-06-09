@@ -52,12 +52,6 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.keypad > button:nth-child(4n),
-.keypad> button:nth-child(19) {
-  background-color: orange;
-  transition: 0.2s ease;
-}
-
 .keypad button {
   height: 48px;
   padding: 16px;
@@ -71,6 +65,12 @@ body {
 
 .keypad button:hover {
   background-color: wheat;
+}
+
+.keypad > button:nth-child(4n),
+.keypad > button:nth-child(19) {
+  background-color: orange;
+  transition: 0.2s ease;
 }
 
 .z {
