@@ -4,27 +4,29 @@ import Buttons from './buttons';
 import calculate from '../logic/calculate';
 import '../App.css';
 
-const Calculator = () => {
+export default function Calculator() {
   const [state, setState] = useState({
     total: null,
     next: null,
     opeation: null,
   });
 
-  const handleClick = (e) => {
-    setState(calculate(state, e.target.innerText));
+  const handleClick = (event) => {
+    const buttonName = event.target.innerText;
+    setState(calculate(state, buttonName));
   };
+
+  const { total, next, operation } = state;
 
   return (
     <div className="result">
-      <Buttons
-        handleClick={handleClick}
-        total={Number(state.total)}
-        operation={state.operation}
-        next={state.next}
-      />
+      <div className="display">
+        <div className="previous-operand">{next || operation}</div>
+        <div className="current-operand">{total || next || '0'}</div>
+      </div>
+      <div className="keypad">
+        <Buttons handleButtonClick={handleClick} />
+      </div>
     </div>
   );
-};
-
-export default Calculator;
+}
