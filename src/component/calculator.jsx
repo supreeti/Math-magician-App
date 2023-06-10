@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import { useState } from 'react';
 import Buttons from './buttons';
 import calculate from '../logic/calculate';
