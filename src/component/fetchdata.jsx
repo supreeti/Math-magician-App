@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import { useState, useEffect } from 'react';
 
 const FetchData = () => {

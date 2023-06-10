@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import './App.css';
 import Calculator from './component/calculator';
 import FetchData from './component/fetchdata';
