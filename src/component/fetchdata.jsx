@@ -30,7 +30,7 @@ const FetchData = () => {
   }, []);
 
   return (
-    <div className="quote">
+    <div className="quotes">
       {isLoading && <p>Page Loading...</p>}
       {error && <p>{error}</p>}
       {!isLoading && !error && (
