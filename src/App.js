@@ -1,15 +1,14 @@
 import './App.css';
-import Calculator from './component/calculator';
-import FetchData from './component/fetchdata';
+import { BrowserRouter } from 'react-router-dom';
+import Mainpage from './main';
 
 function App() {
   return (
     <>
       <div className="App">
-        <Calculator />
-      </div>
-      <div className="quote">
-        <FetchData />
+        <BrowserRouter>
+          <Mainpage />
+        </BrowserRouter>
       </div>
     </>
   );
