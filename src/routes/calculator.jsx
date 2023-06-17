@@ -19,6 +19,7 @@ export default function Calculator() {
 
   return (
     <div className="calculate">
+      <p>Let&#8217;s do some maths!</p>
       <div className="result">
         <div className="display">
           <div className="previous-operand">{next || operation}</div>

@@ -36,6 +36,7 @@ const FetchData = () => {
       {!isLoading && !error && (
         <>
           <p>{quote.quote}</p>
+          by
           <h2>{quote.author}</h2>
         </>
       )}
