@@ -19,12 +19,33 @@ This project is about Math magician using React.
 
 <!-- PROJECT DESCRIPTION -->
  
+# 📖 MATH MAGICIANS WEBSITE <a name="about-project"></a>
+
+**Math magicians website** is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations, read a random math-related quote.
+
 ## 🛠 Built With <a name="built-with"></a>
 
-- Html
-- CSS
-- Javascript ES6
-- React
+### Tech Stack <a name="tech-stack"></a>
+
+
+<details>
+  <summary>React.js, Jest & React Test Library</summary>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **displays calculator for simple calculations**
+- **displays random math-related quotes**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+- Link to live project: [Math magicians - A website for mathematics fans](https://maths-5i34.onrender.com//)
 
 <!-- GETTING STARTED -->
 
