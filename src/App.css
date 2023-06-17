@@ -6,16 +6,22 @@
 
 body {
   height: 100vh;
-  background-color: white;
+  position: fixed;
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  justify-content: space-between;
 }
 
 .calculate {
+  padding: 3% 3%;
+  width: 50%;
+  align-items: center;
   background-color: #f6f8f9;
-  width: 20rem;
   border: 0.5px solid #f6f8f9;
+  margin: 5rem 25rem 5rem 25rem;
 }
 
 .display {
@@ -78,14 +84,14 @@ body {
 }
 
 .quotes {
-  position: absolute;
   left: 25%;
+  flex-direction: column;
   top: 30%;
-  width: 50%;
+  width: 95%;
   font-size: 1.5rem;
   text-align: center;
-  margin-top: 2rem;
-  padding: 0 1rem;
+  margin-top: 20rem;
+  padding: 2rem 5rem 5rem 0;
 }
 
 /* Home page */
@@ -100,10 +106,11 @@ body {
 
 header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
+  background-color: blue;
   padding: 3% 5%;
+  margin-top: 0;
 }
 
 header h1 {
@@ -118,7 +125,7 @@ header h1 {
   justify-content: flex-start;
   line-height: 1.5rem;
   color: #000;
-  width: 80%;
+  width: 90%;
 }
 
 .home-page p {
@@ -146,4 +153,3 @@ nav a {
   color: #000;
   text-decoration: none;
 }
-

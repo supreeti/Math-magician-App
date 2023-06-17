@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 const Home = () => (
   <div className="home-page">
-    <h1> Welcome to the calculator app dedicated to creating the best online calculator.!</h1>
+    <h1> Welcome to the Calculator app dedicated to creating the best online calculator!</h1>
     <p>
       With this tool, you can perform a wide range of calculations in a fast and user-friendly way. Whether you need to add numbers, subtract them, calculate percentages, or perform more complex operations, our calculator has got you covered
     </p>

@@ -10,14 +10,14 @@ const links = [
 const Navbar = () => {
   const location = useLocation();
 
-  const isActive = (path) => (location.pathname === path ? { color: 'orange' } : {});
+  const IsActive = (path) => (location.pathname === path ? { color: 'gray' } : {});
 
   return (
     <nav>
       <ul>
         {links.map((link) => (
           <li key={link.text}>
-            <Link to={link.path} style={isActive(link.path)}>
+            <Link to={link.path} style={IsActive(link.path)}>
               {link.text}
             </Link>
           </li>
